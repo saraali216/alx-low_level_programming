@@ -1,0 +1,1 @@
+structers and typedef
