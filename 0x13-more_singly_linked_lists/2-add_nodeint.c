@@ -9,15 +9,15 @@
   */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *ptr;
+	listint_t *p;
 
 	if (head == NULL)
 		return (NULL);
-	ptr = malloc(sizeof(listint_t));
-	if (ptr == NULL)
+	p = malloc(sizeof(listint_t));
+	if (p == NULL)
 		return (NULL);
-	ptr->n = n;
-	ptr->next = *head;
-	*head = ptr;
-	return (ptr);
+	p->n = n;
+	p->next = *head;
+	*head = p;
+	return (p);
 }
