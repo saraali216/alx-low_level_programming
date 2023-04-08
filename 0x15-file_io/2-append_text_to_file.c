@@ -33,7 +33,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (f == -1)
 		return (-1);
 	if (text_content != NULL)
-		length = write(fd, text_content, _strlen(text_content));
+		length = write(f, text_content, _strlen(text_content));
 	close(f);
 	if (length == -1)
 		return (-1);
